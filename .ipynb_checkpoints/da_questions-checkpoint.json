@@ -1,0 +1,61 @@
+[
+  {"q":"What is the difference between a data analyst and a data scientist?","a":"A data analyst focuses on querying, cleaning, and visualizing data to generate insights, while a data scientist builds predictive models and uses machine learning to forecast outcomes."},
+
+  {"q":"What is SQL used for in data analytics?","a":"SQL is used to query, filter, aggregate, join, and manipulate structured data stored in relational databases."},
+
+  {"q":"What are the different types of joins in SQL?","a":"The main SQL joins are INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN, and CROSS JOIN."},
+
+  {"q":"What is normalization in databases?","a":"Normalization is the process of organizing data to reduce redundancy and improve data integrity."},
+
+  {"q":"What is ETL?","a":"ETL stands for Extract, Transform, Load. It is the process of extracting data from sources, transforming it into usable format, and loading it into a data warehouse."},
+
+  {"q":"What is the difference between WHERE and HAVING in SQL?","a":"WHERE filters rows before aggregation, while HAVING filters results after aggregation."},
+
+  {"q":"What is overfitting in machine learning?","a":"Overfitting occurs when a model learns noise and patterns specific to the training data, reducing its ability to generalize to new data."},
+
+  {"q":"What is underfitting?","a":"Underfitting occurs when a model is too simple and fails to capture the underlying patterns in the data."},
+
+  {"q":"What is cross-validation?","a":"Cross-validation is a technique used to evaluate model performance by splitting the dataset into multiple training and testing folds."},
+
+  {"q":"What is the bias-variance tradeoff?","a":"The bias-variance tradeoff describes the balance between a model that is too simple (high bias) and one that is too complex (high variance)."},
+
+  {"q":"What evaluation metrics are used for classification?","a":"Common classification metrics include accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrix."},
+
+  {"q":"What evaluation metrics are used for regression?","a":"Common regression metrics include Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared."},
+
+  {"q":"What is logistic regression?","a":"Logistic regression is a classification algorithm used to predict binary outcomes using a logistic function."},
+
+  {"q":"What is linear regression?","a":"Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables."},
+
+  {"q":"What is feature engineering?","a":"Feature engineering is the process of creating or transforming variables to improve model performance."},
+
+  {"q":"What is feature selection?","a":"Feature selection is the process of choosing the most relevant variables for building a predictive model."},
+
+  {"q":"What is data cleaning?","a":"Data cleaning involves handling missing values, removing duplicates, correcting errors, and standardizing formats."},
+
+  {"q":"What is exploratory data analysis (EDA)?","a":"EDA is the process of analyzing datasets to summarize their main characteristics using visualizations and statistical methods."},
+
+  {"q":"What is a confusion matrix?","a":"A confusion matrix is a table used to evaluate classification models by comparing predicted and actual values."},
+
+  {"q":"What is A/B testing?","a":"A/B testing is an experiment comparing two versions of a product or feature to determine which performs better."},
+
+  {"q":"What is hypothesis testing?","a":"Hypothesis testing is a statistical method used to determine whether there is enough evidence to reject a null hypothesis."},
+
+  {"q":"What is a p-value?","a":"A p-value measures the probability of observing results at least as extreme as the current data under the null hypothesis."},
+
+  {"q":"What is a data warehouse?","a":"A data warehouse is a centralized repository used to store structured data for reporting and analysis."},
+
+  {"q":"What is a data lake?","a":"A data lake stores raw, structured, and unstructured data in its native format for future analysis."},
+
+  {"q":"What is the difference between supervised and unsupervised learning?","a":"Supervised learning uses labeled data, while unsupervised learning finds patterns in unlabeled data."},
+
+  {"q":"What is clustering?","a":"Clustering is an unsupervised learning technique used to group similar data points together."},
+
+  {"q":"What is K-means?","a":"K-means is a clustering algorithm that partitions data into K distinct groups based on distance from centroids."},
+
+  {"q":"What is dimensionality reduction?","a":"Dimensionality reduction reduces the number of features in a dataset while preserving important information."},
+
+  {"q":"What is PCA?","a":"Principal Component Analysis (PCA) is a dimensionality reduction technique that transforms correlated variables into uncorrelated principal components."},
+
+  {"q":"What is time series forecasting?","a":"Time series forecasting predicts future values based on historical time-dependent data."}
+]
