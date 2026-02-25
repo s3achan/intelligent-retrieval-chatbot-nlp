@@ -1,5 +1,8 @@
 # 🧠 Intelligent Retrieval Q&A Chatbot
 
+🔗 **Live Demo:** https://interview-questions-bot-nlp.streamlit.app/
+
+
 A retrieval-based NLP chatbot built using TF-IDF vectorization and cosine similarity.  
 The system supports dynamic JSON knowledge bases and is deployed with a Streamlit UI for interactive question answering.
 
