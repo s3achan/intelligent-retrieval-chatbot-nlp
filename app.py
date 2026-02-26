@@ -69,9 +69,7 @@ def retrieve(query: str, kb, vectorizer, X, top_k: int = 5, threshold: float = 0
     return kb[best_idx], best_score, results
 
 
-# -----------------------------
-# UI
-# -----------------------------
+
 st.title("💬 Q&A Chatbot (TF-IDF + Cosine Similarity)")
 st.caption("Type a question. The bot retrieves the closest matching Q→A from your JSON knowledge base.")
 
@@ -82,7 +80,7 @@ with st.sidebar:
     threshold = st.slider("Confidence threshold", 0.0, 0.5, 0.10, 0.01)
     show_debug = st.checkbox("Show debug (scores)", value=True)
 
-# Load KB + build index
+# Load KB 
 try:
     kb = load_kb(json_path)
     vectorizer, X = build_index(kb)
@@ -101,22 +99,20 @@ if st.button("Ask") or query:
 
         col1, col2 = st.columns([2, 1])
 
-        with col1:
-            if best is None:
-                st.warning(f"Low confidence (best score = {best_score:.3f}). Try rephrasing.")
-            else:
-                st.subheader("✅ Best Answer")
-                st.markdown(best["a"])
-                st.caption(f"Matched question: **{best['q']}**  |  Confidence: **{best_score:.3f}**")
+        if best is None:
+             st.warning(f"Low confidence (best score = {best_score:.3f}). Try rephrasing.")
+        else:
+            st.subheader("✅ Best Answer")
+            st.markdown(best["a"])
+            st.caption(f"Matched question: **{best['q']}**  |  Confidence: **{best_score:.3f}**")
+        
+        st.markdown("---")
+        st.subheader("📌 Top Matches")
+        df = pd.DataFrame(results)
+        if not show_debug:
+            df = df[["Question", "Answer"]]
+        st.dataframe(df, use_container_width=True)
 
-        with col2:
-            st.subheader("📌 Top Matches")
-            df = pd.DataFrame(results)
-            if not show_debug:
-                df = df[["Question", "Answer"]]
-            st.dataframe(df, use_container_width=True)
-
-        # Optional: show “Did you mean…”
         if best is None:
             st.subheader("Did you mean:")
             for r in results[:3]:
