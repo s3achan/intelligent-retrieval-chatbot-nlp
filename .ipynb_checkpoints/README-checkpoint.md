@@ -1,6 +1,6 @@
 # 🧠 Intelligent Retrieval Q&A Chatbot
 
-🔗 **Live Demo:** https://interview-questions-bot-nlp.streamlit.app/
+🔗 **Live Demo:** https://intelligent-retrieval-chatbot-nlp.streamlit.app/
 
 
 A retrieval-based NLP chatbot built using TF-IDF vectorization and cosine similarity.  
